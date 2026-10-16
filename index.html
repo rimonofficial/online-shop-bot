@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online IT Shop</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #f1f5f9;
+      font-family: Arial, sans-serif;
+      color: #172033;
+    }
+    .header {
+      background: #1769ff;
+      color: white;
+      padding: 22px;
+      border-radius: 16px;
+      text-align: center;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    button {
+      border: none;
+      border-radius: 12px;
+      background: white;
+      padding: 20px 8px;
+      font-size: 16px;
+      color: #172033;
+    }
+    #message {
+      margin-top: 20px;
+      padding: 15px;
+      background: white;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Online IT Shop</h2>
+    <p>আপনার অনলাইন শপে স্বাগতম!</p>
+  </div>
+
+  <div class="menu">
+    <button onclick="show('আমাদের পণ্য শীঘ্রই যুক্ত হবে।')">🛍️ Shop</button>
+    <button onclick="show('আপনার প্রোফাইল এখানে দেখা যাবে।')">👤 Profile</button>
+    <button onclick="show('নিরাপদ পেমেন্ট ব্যবস্থা পরে যুক্ত হবে।')">💳 Deposit</button>
+    <button onclick="show('আপনার অর্ডার এখানে দেখা যাবে।')">📦 Purchases</button>
+    <button onclick="show('Referral ব্যবস্থা পরে যুক্ত হবে।')">🎁 Referral</button>
+    <button onclick="show('সাপোর্টের জন্য যোগাযোগ করুন।')">💬 Support</button>
+  </div>
+
+  <div id="message">
+    যেকোনো একটি বাটনে চাপ দিন।
+  </div>
+
+  <script>
+    function show(text) {
+      document.getElementById('message').textContent = text;
+    }
+  </script>
+</body>
+</html>
